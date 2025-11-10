@@ -87,6 +87,8 @@ export const logIn = async (req, res) => {
         fullName: userExist.fullName,
         email: userExist.email,
         profilePic: userExist.profilePic,
+        createdAt: userExist.createdAt,
+        updatedAt: userExist.updatedAt,
       });
     }
   } catch (error) {
