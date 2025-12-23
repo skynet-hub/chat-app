@@ -1,5 +1,9 @@
 import React from 'react'
-import { useChatStore } from '../store/useChatStore'
+import { useChatStore } from '../store/useChatStore.js'
+import Sidebar from '../components/Sidebar.jsx'
+import NoChatSelected from '../components/NoChatSelected.jsx'
+import ChatContainer from '../components/ChatContainer.jsx'
+
 
 function HomePage() {
   const { selectedUser } = useChatStore()
@@ -10,8 +14,8 @@ function HomePage() {
            <div className='flex h-full rounded overflow-hidden'>
               <Sidebar />
 
-              {!selectedUser ? <NoChatSelected /> : <ChatContainer />}   // Todo: create the sidebar NochatSelected and ChatContainer components
-           </div>
+              {!selectedUser ? <NoChatSelected /> : <ChatContainer />}  
+            </div>
         </div>
       </div>
     </div>
