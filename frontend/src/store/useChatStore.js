@@ -3,7 +3,7 @@ import { toast } from "react-hot-toast"
 import { axiosInstance } from '../lib/axios';
 
 
-export const useStoreChat = create((set) => ({
+export const useChatStore = create((set) => ({
     messages: [],
     users: [],
     selectedUser: null,
