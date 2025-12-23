@@ -9,6 +9,8 @@ function HomePage() {
         <div className='bg-base-100 rounded-lg shadow-xl w-full max-w-6xl h-[calc(100vh-8rem)]'>
            <div className='flex h-full rounded overflow-hidden'>
               <Sidebar />
+
+              {!selectedUser ? <NoChatSelected /> : <ChatContainer />}   // Todo: create the sidebar NochatSelected and ChatContainer components
            </div>
         </div>
       </div>
